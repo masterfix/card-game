@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardsComponent } from './components/cards/cards.component';
 import { GameShellComponent } from './components/game-shell/game-shell.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -14,7 +15,7 @@ import { RankingComponent } from './components/ranking/ranking.component';
     MainLoopComponent,
     CardsComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule],
   exports: [GameShellComponent],
 })
 export class GameModule {}

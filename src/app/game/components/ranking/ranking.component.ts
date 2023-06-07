@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCrown } from '@fortawesome/free-solid-svg-icons';
 import { GameService } from '../../services/game.service';
 
 @Component({
@@ -7,5 +8,7 @@ import { GameService } from '../../services/game.service';
   styleUrls: ['./ranking.component.scss'],
 })
 export class RankingComponent {
+  faCrwon = faCrown;
+
   constructor(readonly gameService: GameService) {}
 }
