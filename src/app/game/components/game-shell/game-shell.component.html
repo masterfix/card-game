@@ -1,1 +1,9 @@
-<p>game-shell works!</p>
+<div class="shell">
+  <div class="title">Kartenspiel</div>
+  <div class="play-area">
+    <app-intro *ngIf="showIntro" />
+    <app-main-loop *ngIf="showMainLoop" />
+    <app-ranking *ngIf="showRanking" />
+  </div>
+  <div class="messages"></div>
+</div>

@@ -1,9 +1,9 @@
-import { COLOR } from '../services/color.service';
+import { Color } from './color';
 
 export class Card {
   visible = false;
 
-  constructor(readonly color: COLOR) {}
+  constructor(readonly color: Color) {}
 
   makeVisible() {
     this.visible = true;

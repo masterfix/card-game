@@ -1,0 +1,24 @@
+.shell {
+  width: 800px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.title {
+  padding: 20px;
+  background-color: gray;
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.play-area {
+  min-height: 500px;
+}
+
+.messages {
+  padding: 20px;
+  background-color: gray;
+  border-radius: 0 0 10px 10px;
+}

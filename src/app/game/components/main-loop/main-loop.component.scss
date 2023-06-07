@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.round {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.message {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.dice {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.cards {
+  text-align: center;
+  padding: 40px;
+  border-bottom: 1px solid black;
+}
+
+.actions {
+  text-align: center;
+  padding: 20px;
+}

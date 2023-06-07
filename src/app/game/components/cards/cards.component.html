@@ -1,0 +1,5 @@
+<div
+  *ngFor="let card of cards"
+  [style.background-color]="card.visible ? card.color.hexValue : 'white'"
+  class="card"
+></div>
