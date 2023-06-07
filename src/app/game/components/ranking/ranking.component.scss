@@ -1,0 +1,55 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  background-color: #414141;
+
+  border-radius: 10px 10px 0 0;
+
+  padding: 20px 0;
+  text-align: center;
+}
+
+.list {
+  background-color: #ff730d;
+
+  border-radius: 0 0 10px 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #414141;
+  color: white;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.crown {
+  margin-right: 10px;
+}

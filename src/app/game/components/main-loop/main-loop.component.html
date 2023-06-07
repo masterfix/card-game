@@ -1,0 +1,22 @@
+<div class="round">Runde {{ gameService.getRound() }}</div>
+
+<div class="message">
+  {{ gameService.getCurrentPlayer().player.name }} ist am Zug
+</div>
+
+<div
+  class="dice"
+  [style.background-color]="diceResult ? diceResult.hexValue : 'white'"
+>
+  <button [disabled]="diceDisabled" (click)="rollDice()">würfeln</button>
+</div>
+
+<div class="cards">
+  <app-cards [cards]="gameService.getCurrentPlayer().cards" />
+</div>
+
+<div class="actions">
+  <button [disabled]="!diceDisabled" (click)="nextPlayer()">
+    Nächster Spieler
+  </button>
+</div>
