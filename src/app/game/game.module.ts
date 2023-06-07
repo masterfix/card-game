@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GameShellComponent } from './game-shell/game-shell.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    GameShellComponent
+  ],
   imports: [
     CommonModule
   ]
