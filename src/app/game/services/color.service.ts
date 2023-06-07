@@ -6,12 +6,12 @@ import { Color } from '../models/color';
 })
 export class ColorService {
   colors: Color[] = [
-    new Color('red', 0xff0000),
-    new Color('green', 0x00ff00),
-    new Color('blue', 0x0000ff),
-    new Color('yellow', 0xffff00),
-    new Color('orange', 0xffa500),
-    new Color('pink', 0xffc0cb),
+    new Color('Rot', '#ff0000'),
+    new Color('Grün', '#00ff00'),
+    new Color('Blau', '#0000ff'),
+    new Color('Gelb', '#ffff00'),
+    new Color('Orange', '#ffa500'),
+    new Color('Pink', '#ffc0cb'),
   ];
 
   getRandomColor(): Color {
