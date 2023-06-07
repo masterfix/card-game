@@ -6,5 +6,6 @@ import { RankingComponent } from './components/ranking/ranking.component';
 @NgModule({
   declarations: [GameShellComponent, RankingComponent],
   imports: [CommonModule],
+  exports: [GameShellComponent],
 })
 export class GameModule {}
