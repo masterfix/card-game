@@ -3,6 +3,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Card } from '../models/card';
 import { Color } from '../models/color';
 import { Player } from '../models/player';
+import { Rank } from '../models/rankings';
 import { ColorService } from './color.service';
 import { DiceService } from './dice.service';
 
@@ -43,6 +44,19 @@ export class GameService {
 
   getCurrentPlayer() {
     return this.players[this.currentPlayerIndex];
+  }
+
+  getRankings(): Rank[] {
+    return this.players
+      .map((player) => {
+        const rank: Rank = {
+          playerNmae: player.player.name,
+          cardsLeft: player.cards.filter((card) => card.visible === false)
+            .length,
+        };
+        return rank;
+      })
+      .sort((a, b) => a.cardsLeft - b.cardsLeft);
   }
 
   startGame() {

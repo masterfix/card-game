@@ -1,1 +1,11 @@
-<p>ranking works!</p>
+<h2 class="message">Das Spiel ist beendet</h2>
+
+<div class="box">
+  <div class="title">Nach 4 Spielrunden</div>
+  <ul class="list">
+    <li *ngFor="let rank of gameService.getRankings(); let i = index">
+      <div>{{ i + 1 }}. {{ rank.playerNmae }}</div>
+      <div *ngIf="rank.cardsLeft > 0">{{ rank.cardsLeft }}</div>
+    </li>
+  </ul>
+</div>
