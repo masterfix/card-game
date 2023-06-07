@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
-
-export enum COLOR {
-  RED = 0xff0000,
-  BLUE = 0x0000ff,
-  GREEN = 0x00ff00,
-  YELLOW = 0xffff00,
-  ORANGE = 0xffa500,
-  PINK = 0xffc0cb,
-}
+import { Color } from '../models/color';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ColorService {
-  getRandomColor(): COLOR {
-    const colorCount = Object.keys(COLOR).length;
-    return Math.floor(Math.random() * colorCount);
+  colors: Color[] = [
+    new Color('red', 0xff0000),
+    new Color('green', 0x00ff00),
+    new Color('blue', 0x0000ff),
+    new Color('yellow', 0xffff00),
+    new Color('orange', 0xffa500),
+    new Color('pink', 0xffc0cb),
+  ];
+
+  getRandomColor(): Color {
+    return this.colors[Math.floor(Math.random() * this.colors.length)];
   }
 }

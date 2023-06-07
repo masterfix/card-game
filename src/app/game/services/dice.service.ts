@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { COLOR, ColorService } from './color.service';
+import { Color } from '../models/color';
+import { ColorService } from './color.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DiceService {
+  constructor(private readonly colorService: ColorService) {}
 
-  constructor(private readonly colorService: ColorService) { }
-
-  roll(): COLOR {
-    return this.colorService.getRandomColor(;
+  roll(): Color {
+    return this.colorService.getRandomColor();
   }
 }
